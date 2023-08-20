@@ -1,0 +1,211 @@
+/*
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+.shadow {
+  box-shadow: 8px 12px 26px -6px rgba(0, 0, 0, 0.1); }
+
+.article {
+  color: #ecf2f8;
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .article > .header {
+    display: flex;
+    gap: 20px; }
+    .article > .header > img {
+      float: left;
+      max-width: 30px;
+      border-radius: 50%; }
+    .article > .header > .info {
+      display: flex;
+      flex-direction: column; }
+      .article > .header > .info > p:last-child {
+        color: rgba(236, 242, 248, 0.5); }
+  .article > .main-paragraph {
+    font-weight: 500; }
+  .article > .review-paragraph {
+    color: rgba(236, 242, 248, 0.5); }
+
+/*
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+.shadow {
+  box-shadow: 8px 12px 26px -6px rgba(0, 0, 0, 0.1); }
+
+.article {
+  color: #ecf2f8;
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .article > .header {
+    display: flex;
+    gap: 20px; }
+    .article > .header > img {
+      float: left;
+      max-width: 30px;
+      border-radius: 50%; }
+    .article > .header > .info {
+      display: flex;
+      flex-direction: column; }
+      .article > .header > .info > p:last-child {
+        color: rgba(236, 242, 248, 0.5); }
+  .article > .main-paragraph {
+    font-weight: 500; }
+  .article > .review-paragraph {
+    color: rgba(236, 242, 248, 0.5); }
+
+html {
+  font-size: 13px;
+  font-family: 'Barlow', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #ecf2f8; }
+
+/*
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+.shadow {
+  box-shadow: 8px 12px 26px -6px rgba(0, 0, 0, 0.1); }
+
+.article {
+  color: #ecf2f8;
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .article > .header {
+    display: flex;
+    gap: 20px; }
+    .article > .header > img {
+      float: left;
+      max-width: 30px;
+      border-radius: 50%; }
+    .article > .header > .info {
+      display: flex;
+      flex-direction: column; }
+      .article > .header > .info > p:last-child {
+        color: rgba(236, 242, 248, 0.5); }
+  .article > .main-paragraph {
+    font-weight: 500; }
+  .article > .review-paragraph {
+    color: rgba(236, 242, 248, 0.5); }
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "box1 box1 box2 box5" "box3 box4 box4 box5";
+    gap: 30px; }
+    .container .items > .article1 {
+      grid-area: box1;
+      background-color: #7541c8;
+      background-image: url(../images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position: top right 80px; }
+      .container .items > .article1 img {
+        border: 2px solid #a07dd9; }
+    .container .items > .article2 {
+      grid-area: box2;
+      background-color: #48556a; }
+    .container .items > .article3 {
+      grid-area: box3;
+      background-color: white;
+      color: #48556a; }
+      .container .items > .article3 .info > p:last-child {
+        color: rgba(25, 33, 46, 0.5); }
+      .container .items > .article3 .review-paragraph {
+        color: rgba(25, 33, 46, 0.5); }
+    .container .items > .article4 {
+      grid-area: box4;
+      background-color: #19212e; }
+      .container .items > .article4 img {
+        border: 2px solid #7541c8; }
+    .container .items > .article5 {
+      grid-area: box5;
+      background-color: white;
+      color: #48556a; }
+      .container .items > .article5 .info > p:last-child {
+        color: rgba(25, 33, 46, 0.5); }
+      .container .items > .article5 .review-paragraph {
+        color: rgba(25, 33, 46, 0.5); }
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-between; }
+    .container .items {
+      margin: 50px 20px;
+      display: flex;
+      flex-direction: column; }
+      .container .items > .article5 {
+        margin-bottom: 50px; }
+      .container .items > .article1 {
+        background-position: top right 30px; }
+  .article {
+    max-width: 256px; } }

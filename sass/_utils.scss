@@ -1,0 +1,81 @@
+/*
+## Colors
+
+### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%)
+
+Note for text colors:
+
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+
+// Primary Colors
+
+$moderate-violet: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+// Neutral Colors
+
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+// Background Colors
+
+$article1-bg: $moderate-violet;
+$article2-bg: $very-dark-grayish-blue;
+$article3-bg: $white;
+$article4-bg: $very-dark-blackish-blue;
+$article5-bg: $white;
+
+.shadow {
+  box-shadow: 8px 12px 26px -6px rgba(0,0,0,.1);
+}
+
+.article {
+  color: $light-grayish-blue;
+  border-radius: 8px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  & > .header {
+    display: flex;
+    gap: 20px;
+    
+    & > img {
+      float: left;
+      max-width: 30px;
+      border-radius: 50%;
+    }
+    & > .info {
+      display: flex;
+      flex-direction: column;
+
+      & > p:last-child {
+        color: rgba($light-grayish-blue, $alpha: 0.5);
+      }
+    }
+  }
+
+  & > .main-paragraph {
+    font-weight: 500;
+  }
+
+  & > .review-paragraph {
+    color: rgba($light-grayish-blue, $alpha: 0.5);
+  }
+}

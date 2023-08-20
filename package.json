@@ -1,0 +1,14 @@
+{
+  "name": "testimonial-grid-section",
+  "version": "1.0.0",
+  "description": "Testimonial Grid Section",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "utkangencdev",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

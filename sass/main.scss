@@ -1,0 +1,30 @@
+@import 'utils';
+@import 'base';
+@import 'container';
+
+// Media Queries
+@media (max-width: 500px) {
+
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .items {
+      margin: 50px 20px;
+      display: flex;
+      flex-direction: column;
+
+      & > .article5 {
+        margin-bottom: 50px;
+      }
+
+      & > .article1 {
+        background-position: top right 30px;
+      }
+    }
+  }
+
+  .article {
+    max-width: 256px;
+  }
+}
